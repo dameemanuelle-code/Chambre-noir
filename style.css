@@ -234,25 +234,42 @@ a {
 
 /* --------- GALERIE --------- */
 
+/* --------- GALERIE --------- */
+
 .galerie-noire-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .galerie-noire-item {
-  border-radius: 10px;
+  position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.7);
+  background: radial-gradient(circle at top, #2b0508, #050104);
 }
 
-.placeholder-noire {
-  border: 1px dashed rgba(255, 255, 255, 0.25);
-  padding: 2.5rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(245, 203, 167, 0.8);
+.galerie-noire-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* léger zoom au survol */
+.galerie-noire-item:hover img {
+  transform: scale(1.06);
+  opacity: 0.9;
+}
+
+/* Sur écran plus large : 3 colonnes ou 4 si tu préfères */
+@media (min-width: 900px) {
+  .galerie-noire-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* --------- FORMULAIRE CONTACT --------- */
