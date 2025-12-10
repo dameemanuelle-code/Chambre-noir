@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci – La Chambre Noire</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #2a0509, #050104 60%, #000000);
+      color: #f5d7d7;
+      font-family: "Playfair Display", serif;
+    }
+
+    .merci-container {
+      background: rgba(5, 1, 4, 0.9);
+      border-radius: 14px;
+      padding: 3rem 2.5rem;
+      max-width: 700px;
+      margin: 1.5rem;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.8);
+      border: 1px solid rgba(246, 201, 136, 0.45);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0 0 1.5rem;
+      color: #f6d49c;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 2.2rem;
+      color: #f3dede;
+    }
+
+    .btn-retour-noire {
+      display: inline-block;
+      padding: 0.8rem 1.9rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      background: linear-gradient(135deg, #ff3347, #ffb05a);
+      color: #2b0505;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75);
+      transition: 0.3s ease;
+    }
+
+    .btn-retour-noire:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.9);
+      background: linear-gradient(135deg, #ff5b6a, #ffd38f);
+    }
+  </style>
+</head>
+<body>
+  <div class="merci-container">
+    <h1>Demande reçue</h1>
+    <p>
+      Votre message a été transmis à l’équipe de la Chambre Noire.<br>
+      Vous recevrez une réponse si votre demande est jugée compatible avec notre cadre et notre protocole.
+    </p>
+
+    <a href="https://dameemanuelle-code.github.io/Chambre-noir/" class="btn-retour-noire">
+      Retour à la Chambre Noire
+    </a>
+  </div>
+</body>
+</html>
