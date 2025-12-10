@@ -251,10 +251,11 @@ a {
 
 .galerie-noire-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;              /* on laisse la hauteur naturelle */
   display: block;
+  object-fit: cover;         /* gardé au cas où, mais ne déforme plus */
   transition: transform 0.35s ease, opacity 0.35s ease;
+  max-height: 420px;         /* pour éviter des colonnes trop hautes sur mobile */
 }
 
 /* léger zoom au survol */
